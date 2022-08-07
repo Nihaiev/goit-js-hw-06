@@ -21,6 +21,6 @@ const allImgEl = images
 galleryUl.insertAdjacentHTML('afterbegin', allImgEl);
 
 const gallaryStyle = document.querySelector(".gallery") 
-  gallaryStyle.style.display = "flex";
+gallaryStyle.style.display = "flex";
 gallaryStyle.style.listStyle = "none";
   
