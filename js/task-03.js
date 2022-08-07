@@ -16,11 +16,13 @@ const images = [
 const galleryUl = document.querySelector('.gallery');
 console.log(galleryUl);
 const allImgEl = images
-.map(image => `<li class ="gallery_image"><img src="${image.url}" alt="${image.alt}" height = "150"></li>`)
-.join('');
+  .map(
+    image =>
+      `<li class ="gallery_image"><img src="${image.url}" alt="${image.alt}" height = "150"></li>`,
+  )
+  .join('');
 galleryUl.insertAdjacentHTML('afterbegin', allImgEl);
 
-const gallaryStyle = document.querySelector(".gallery") 
-gallaryStyle.style.display = "flex";
-gallaryStyle.style.listStyle = "none";
-  
+const gallaryStyle = document.querySelector('.gallery');
+gallaryStyle.style.display = 'flex';
+gallaryStyle.style.listStyle = 'none';
